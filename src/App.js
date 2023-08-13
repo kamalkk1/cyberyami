@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar.jsx';
 import LandingPage from './components/LandingPage/LandingPage.jsx';
 import OverView from './components/OverView/OverView.jsx';
