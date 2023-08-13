@@ -1,0 +1,83 @@
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   width: fit-content;
+   margin-top: 10px;
+}
+.wrapper h3{
+    margin-left: 100px;
+}
+.course {
+    max-width: 500px;
+    text-align: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 10px;
+    /* margin-right: 5vw; */
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 0%;
+   
+}
+
+.icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20rem;
+    gap: 10rem;
+  
+  }
+  
+  .iconBlock {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 0.5rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add a box shadow for a shadowed effect */
+    background-color: #ffffff;
+  }
+  
+  .iconBlock img {
+    max-width: 150px;
+    height: 100px;
+  }
+
+  .iconBlock p {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    white-space: nowrap; 
+  }
+
+  /* Media queries */
+@media screen and (max-width: 1200px) {
+    .wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .wrapper h3 {
+      margin-left: 0; /* Remove the left margin on smaller screens */
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .course {
+      max-width: 100%; /* Expand width to fit the screen */
+      margin-left: 20px; /* Adjust margin for smaller screens */
+    }
+  
+    .icon {
+      flex-direction: column; /* Stack icons vertically on smaller screens */
+      gap: 2rem; /* Reduce the gap between icons */
+      margin-top: 5rem; /* Adjust margin for smaller screens */
+    }
+  }

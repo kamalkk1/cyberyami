@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Navbar from './components/Navbar/Navbar.jsx';
+import LandingPage from './components/LandingPage/LandingPage.jsx';
+import OverView from './components/OverView/OverView.jsx';
+import CourseInclude from './components/CourseInclude/CourseInclude.jsx';
+import Review from './components/Reviews/Review.jsx';
+import Footer from './components/Footer/Footer.jsx';
+import Author from './components/Author/Author.jsx';
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Navbar />
+      <LandingPage/>
+      <OverView />
+      <CourseInclude />
+      <Author />
+      <Review />
+      <Footer />
+    </Router>
   );
-}
+};
 
 export default App;

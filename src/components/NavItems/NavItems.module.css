@@ -1,0 +1,35 @@
+
+   
+/* NavItems.module.css */
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    height: 48px;
+  }
+  
+  .navitems {
+    border-left: none;
+    cursor: pointer;
+    height: 100%;
+    color: black;
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    transition: background-color 0.3s, color 0.3s; 
+    margin-right: 400px;
+    justify-content: space-between;
+    font-size: large;
+  }
+  
+  .navitems:hover {
+    font-style: green; 
+    color: white; 
+  }
+  
+.signup {
+    color: black;
+    padding: 10px;
+    margin-right: 40px;
+}
+  

@@ -1,0 +1,72 @@
+/* AboutAuthor.module.css */
+
+.aboutAuthorSection {
+    display: flex;
+   /* Soft green background with transparency */
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 100px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add a box shadow for a shadowed effect */
+    background-color: rgb(220 252 231)
+  }
+  
+  .leftContent {
+    flex: 1;
+    padding-right: 20px;
+    margin-left: 20px;
+  }
+  
+  .icon img {
+    position: relative;
+    height: 180px;
+    width: 180px;
+  }
+  
+  .rightContent {
+    flex: 2;
+    align-self: flex-start;
+    justify-content: space-between;
+    text-align: left;
+  }
+  
+  h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  h3 {
+    margin-top: 0;
+  }
+  
+  p {
+    margin-top: 5px;
+  }
+  
+
+  /* Media queries */
+@media screen and (max-width: 768px) {
+    .aboutAuthorSection {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+      padding: 10px;
+    }
+  
+    .leftContent {
+      flex: none;
+      padding-right: 0;
+      margin-left: 0;
+      margin-bottom: 20px;
+    }
+  
+    .icon img {
+      height: 120px;
+      width: 120px;
+    }
+  
+    .rightContent {
+      flex: none;
+      align-self: center;
+      text-align: center;
+    }
+  }

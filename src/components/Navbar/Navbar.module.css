@@ -1,0 +1,100 @@
+
+ 
+.navbar {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    color: #fff;
+    padding: 1rem 0;
+    z-index: 1000;
+    height: 90px;
+    margin-left: 50px;
+    margin-right: 10px;
+    border-radius: 10px;
+    position: fixed;  
+}
+  
+
+  .navCenter {
+    width: 90vw;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+
+  .navHeader {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    margin-top: 60px;
+    gap: 18rem;
+    margin-left: 40px;
+  }
+  
+  .navHeader h1 {
+    margin-right: 1rem;
+    font-size: 1.5rem; 
+  }
+  
+  
+  .navLinks {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .navLinks a {
+    text-decoration: none;
+    background-color: var(--color-black);
+    font-size: 1rem;
+  }
+  
+  
+  .showNav {
+    display: none; 
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+  }
+  
+  .navToggle {
+    font-size: 1.5rem;
+    background: transparent;
+    border: none;
+    background-color: var(--color-black);
+    cursor: pointer;
+    display: none; 
+  }
+  
+  
+  .navCart {
+    font-size: 1.5rem;
+    margin-left: 80px;
+    color: black;
+  }
+  
+  /* Media query for small screens */
+  @media screen and (max-width: 768px) {
+
+    .navbar {
+        display: block;
+    }
+    .navLinks {
+      display: none;
+    }
+  
+    .navToggle {
+        display: block; 
+      }
+    .showNav {
+      display: flex;
+    }
+  }
+  
